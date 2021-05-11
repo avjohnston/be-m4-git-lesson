@@ -37,4 +37,8 @@ class Cart
   def item_subtotal(id)
     Item.find(id).price * count_of(id)
   end
+
+  def self.all_items
+    Item.all
+  end
 end

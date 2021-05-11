@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
   before_action :check_user
 
   def index
-    @orders = current_user.orders.reverse_order
+    @orders = current_user.orders
   end
 
   def show
